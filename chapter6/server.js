@@ -25,6 +25,7 @@ var lastId = 6;
 
 router.get('/note', function(req, res) {
   res.send(notes);
+  console.log('get responded');
 });
 router.post('/note', function(req, res) {
   var note = req.body;
@@ -65,5 +66,5 @@ app.use('/api', router);
 
 
 
-app.listen(8000);
-console.log('Open http://localhost:8000 to access the files now'); 			// shoutout to the user
+app.listen(8004);
+console.log('Open http://localhost:8004 to access the files now'); 			// shoutout to the user
